@@ -3,6 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <title>Amsterdão</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            .fotografias {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .fotografias img {
+                width: 150px;
+                border-radius: 20px;
+            }
+            .poesia {
+                margin-top: 20px;
+                padding: 15px;
+                background-color: #f9f9f9;
+                border-left: 5px solid #0077b6;
+                border-radius: 10px;
+                max-width: 500px;
+                font-family: Georgia, "Times New Roman", serif;
+            }
+
+            .poesia p {
+                margin: 5px 0;
+                font-size: 18px;
+                line-height: 1.6;
+            }
+
+            /* Pseudo-classes :nth-child */
+            .poesia p:nth-child(odd) {
+                color: #023e8a; /* azul escuro para versos ímpares */
+                font-weight: bold;
+            }
+
+            .poesia p:nth-child(even) {
+                color: #0096c7; /* azul mais claro para versos pares */
+                font-style: italic;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -15,8 +55,39 @@
             </nav>
         </header>
         <main>
-            <h2>Home</h2>
-            <p>A minha cidade é muito linda!!!</p>
+            <h2>Multimédia</h2>
+            <p>Nesta página encontra conteúdos multimédia.</p>
+            <p>
+                <a href="#fotografias">Fotografias</a>
+                <a href="#video">Vídeo</a>
+                <a href="#poema">Poema</a>
+            </p>
+            <section>   
+                <h3 id="fotografias">Fotografias</h3>
+                <div class="fotografias">
+
+                </div>
+            </section>
+            <section>   
+                <h3 id="video">Vídeo</h3>
+                <iframe width="560" height="315" 
+                    src="https://youtu.be/Oxv6IRcuNaI?si=eb1EuEhbDGSBsPwz" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </section>
+            <section>
+                <h3 id="poema">Poesia</h3>
+                <div class="poesia">
+                    <p>Entre canais que refletem o luar,</p>
+                    <p>Amsterdão canta histórias no ar,</p>
+                    <p>As bicicletas correm sem cessar,</p>
+                    <p>E as pontes parecem sempre abraçar.</p>
+                </div>
+            </section>
         </main>
         <footer>
             <p>DIW 2025</p>
