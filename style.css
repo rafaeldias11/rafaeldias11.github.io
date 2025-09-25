@@ -1,58 +1,39 @@
-/* Definições globais */
-body {
-    background-color: #b3b3b3; /* cor de fundo da página */
-    font-family: Arial, sans-serif;
-    margin: 0;   /* retira margens padrão */
-    padding: 0;  /* retira padding padrão */
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-/* Cabeçalho */
+header,footer, section, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+}
+
 header {
-    background-color: #333; /* fundo preto */
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background: red;
+  position: sticky;
+  height: 10vh;
+  top: 0;
 }
 
-/* Navegação */
-nav {
-    background-color: green; /* fundo verde */
-    padding: 10px;
-    text-align: center;
+section:nth-child(1) {
+  height: 90vh;
+  background: purple;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+section:nth-child(2) {
+  height: 100vh;
+  background: orange;
 }
 
-nav a:hover {
-    text-decoration: underline;
+section:nth-child(3) {
+  height: 80vh;
 }
 
-/* Conteúdo principal */
-main {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Imagens */
-main img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* Rodapé */
 footer {
-    background-color: #333; /* preto */
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+  height: 10vh;
+  background: black;
+  color: white;
 }
