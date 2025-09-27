@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <title>Amsterdão</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <header>
-            <h1>Amsterdão</h1>
-            <nav>
-                <a href="images/index.html">Home</a>
-                <a href="images/local.html">Localização</a>
-                <a href="images/multimedia.html">Multimédia</a>
-                <a href="images/info.html">Informação</a>
-            </nav>
-        </header>
-        <main>
-            <h2>Home</h2>
-            <img src="images/amsterdam.jpg">
-        </main>
-        <footer>
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Amsterdão</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Amsterdão</h1>
+        <!-- Botão hamburguer para mobile -->
+        <button class="hamburguer">☰</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <img src="images/amsterdam.jpg" alt="Vista de Amsterdão">
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Guia de Amsterdão</p>
+    </footer>
+
+    <!-- Script para abrir/fechar o menu -->
+    <script>
+        const hamburguer = document.querySelector('.hamburguer');
+        const nav = document.querySelector('nav');
+
+        hamburguer.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
 </html>
