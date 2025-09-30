@@ -111,3 +111,112 @@ nav a{
     text-align: center;
   }
 }
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 1s;
+}
+
+div:hover {
+  width: 200px;
+}
+
+{
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  
+  padding: 10px;
+  background: whitesmoke;
+}
+
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  padding: 10px 20px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 2px 3px 3px lightgrey;
+}
+
+nav a:last-child {
+  background: dodgerblue;
+  color: white;
+}
+
+a:hover {
+  filter: brightness(90%);
+}
+
+h1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburguer {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  header, nav {
+    flex-direction: column;
+  }
+  nav {
+    display: none;
+  }
+  header:hover nav {
+    display: flex;
+  }
+  .hamburguer {
+    display: block;
+  }
+}
+
+body { 
+  margin:0; 
+  padding:0;
+}
+
+div {
+     margin: 30px;
+}
+
+div.parallax {
+
+     margin: 0px;
+}
+
+.parallax {
+  background-image: url("https://cdn.pixabay.com/photo/2017/06/29/21/36/beach-2456298_1280.jpg");
+  min-height: 200px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  background-image: url("https://cdn.pixabay.com/photo/2021/09/10/13/56/deck-chairs-6613331_1280.jpg");
+  min-height: 200px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+b {
+  color: dodgerblue;
+}
